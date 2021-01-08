@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+       <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/all_restaurants"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+
+    <!--RecyclerView recycles the View Holders to hold upcoming list items-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/txtHome"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/btnConnectivityCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Check"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+</RelativeLayout>

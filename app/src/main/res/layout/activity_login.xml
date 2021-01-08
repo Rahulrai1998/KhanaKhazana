@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/khana_logo_new"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="35dp"
+        />
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:hint="Enter Mobile"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_phone_android_vector"
+        android:drawableLeft="@drawable/ic_phone_android_vector"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobile"
+        android:hint="Enter Password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:background="@drawable/editbox_round"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_password_vector"
+        android:drawableLeft="@drawable/ic_password_vector"
+        android:drawablePadding="5dp"
+        /><!--editbox_round , a round cornered box is created in drawables-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorFavourite"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:padding="6dp"
+        android:textColor="#ffffff"
+
+        />
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?Sign up now"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

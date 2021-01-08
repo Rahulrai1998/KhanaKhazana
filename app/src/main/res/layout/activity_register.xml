@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity"
+    android:background="@color/colorPrimary">
+
+
+    <!--Here Coordinator layout might be used-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerToolbar"
+        android:hint="Name(Min 3 characters)"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_name_vector"
+        android:drawableLeft="@drawable/ic_name_vector"
+        android:drawablePadding="5dp"/>
+    <EditText
+    android:id="@+id/etEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etName"
+    android:hint="Email Address"
+    android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+    android:layout_marginTop="6dp"
+    android:inputType="textEmailAddress"
+    android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_mail_outline_vector"
+        android:drawableLeft="@drawable/ic_mail_outline_vector"
+        android:drawablePadding="5dp"/>
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:hint="Mobile Number"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_phone_android_vector"
+        android:drawableLeft="@drawable/ic_phone_android_vector"
+        android:drawablePadding="5dp"/>
+     <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobile"
+        android:hint="Delivery Address"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_address_vector"
+        android:drawableLeft="@drawable/ic_address_vector"
+        android:drawablePadding="5dp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAddress"
+        android:hint="Password(Min.4 characters)"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_password_vector"
+        android:drawableLeft="@drawable/ic_password_vector"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:id="@+id/etPasswordFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:hint="Confirm Password"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/editbox_round"
+        android:drawableStart="@drawable/ic_password_vector"
+        android:drawableLeft="@drawable/ic_password_vector"
+        android:drawablePadding="5dp"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswordFinal"
+        android:hint="Password(Min.4 characters)"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/register"
+
+        android:background="@color/colorFavourite"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>
